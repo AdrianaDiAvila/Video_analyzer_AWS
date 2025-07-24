@@ -1,0 +1,28 @@
+# Archivo de variables de entorno. Contiene secretos.
+.env
+
+# Directorios de caché y artefactos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.tox/
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+
+# Artefactos de construcción y distribución
+build/
+dist/
+*.egg-info/
+
+# Archivos generados por la aplicación
+downloads/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db

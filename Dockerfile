@@ -17,13 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia el resto de tu código
 COPY . .
 
-# Expone el puerto 5000 de Flask
-EXPOSE 5000
-
-# Variables de entorno para Flask
-ENV FLASK_APP=app.py
-ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_ENV=production
+# Expone el puerto 3000 de la aplicación
+EXPOSE 3000
 
 # Comando por defecto al arrancar el contenedor
-CMD ["flask", "run"]
+CMD ["python", "app.py"]
