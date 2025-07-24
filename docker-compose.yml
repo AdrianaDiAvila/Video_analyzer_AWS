@@ -1,0 +1,9 @@
+
+services:
+  video-analyzer:
+    build: .
+    image: video-analyzer:latest
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
